@@ -12,40 +12,42 @@
     <title>Donate Bangladesh</title>
   </head>
   <body>
-    <div class="flex justify-around bg-orange-50 items-center h-20">
-      <div>
-        <a href="#"
-          ><button
-            class="btn btn-accent btn-sm bg-lime-400 border-none"
-            id="blogs"
+    <header class="fixed top-0 left-0 w-full z-10">
+      <div class="flex justify-around bg-orange-50 items-center h-20">
+        <div>
+          <a href="#"
+            ><button
+              class="btn btn-accent btn-sm bg-lime-400 border-none"
+              id="blogs"
+            >
+              Blog
+            </button></a
           >
-            Blog
-          </button></a
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="logo" class="w-8" />
+          <h1 class="text-base md:text-lg">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center">
+          <img src="assets/coin.png" alt="coin" class="w-6 m-2" />
+          <h1><span id="balance">5500</span> BDT</h1>
+        </div>
+      </div>
+  
+      <div class="flex items-center justify-center gap-4 h-24 bg-white bg-opacity-90">
+        <button
+          class="btn btn-accent btn-sm bg-lime-400 border-none hover:bg-lime-500"
+          id="donatePage"
         >
+          Donation
+        </button>
+        <button class="btn btn-sm border-none hover:bg-lime-500" id="historyPage">
+          History
+        </button>
       </div>
-      <div class="flex items-center gap-3">
-        <img src="assets/logo.png" alt="logo" class="w-8" />
-        <h1 class="text-base md:text-lg">Donate Bangladesh</h1>
-      </div>
-      <div class="flex items-center">
-        <img src="assets/coin.png" alt="coin" class="w-6 m-2" />
-        <h1><span id="balance">5500</span> BDT</h1>
-      </div>
-    </div>
+    </header>
 
-    <div class="flex items-center justify-center gap-4 mt-12 mb-8">
-      <button
-        class="btn btn-accent btn-sm bg-lime-400 border-none hover:bg-lime-500"
-        id="donatePage"
-      >
-        Donation
-      </button>
-      <button class="btn btn-sm border-none hover:bg-lime-500" id="historyPage">
-        History
-      </button>
-    </div>
-
-    <div id="donation-section">
+    <div id="donation-section" class="mt-52">
       <!-- Card 1 -->
       <div
         class="mother w-full md:w-8/12 gap-6 flex flex-col md:flex-row p-5 mx-auto border border-gray-500 rounded-lg mb-6 justify-center"
