@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="flex justify-around bg-orange-50 items-center h-20">
+      <div>
+        <a href="#"
+          ><button
+            class="btn btn-accent btn-sm bg-lime-400 border-none"
+            id="home"
+          >
+            Home
+          </button></a
+        >
+      </div>
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="logo" class="w-8" />
+        <h1 class="text-base md:text-lg">Donate Bangladesh</h1>
+      </div>
+      <div class="flex items-center">
+        <img src="assets/coin.png" alt="coin" class="w-6 m-2" />
+        <h1><span id="balance">5500</span> BDT</h1>
+      </div>
+    </div>
+
+    <div class="faqContainer container w-3/4 mx-auto">
+      <h1 class="font-bold text-4xl mt-6 mb-8">Important FAQ</h1>
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="utilities.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("home").addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+      });
+    </script>
+  </body>
+</html>

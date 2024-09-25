@@ -15,17 +15,20 @@
     <div class="flex justify-around bg-orange-50 items-center h-20">
       <div>
         <a href="#"
-          ><button class="btn btn-accent btn-sm bg-lime-400 border-none">
+          ><button
+            class="btn btn-accent btn-sm bg-lime-400 border-none"
+            id="blogs"
+          >
             Blog
           </button></a
         >
       </div>
       <div class="flex items-center gap-3">
-        <img src="/assets/logo.png" alt="logo" class="w-8" />
+        <img src="assets/logo.png" alt="logo" class="w-8" />
         <h1 class="text-base md:text-lg">Donate Bangladesh</h1>
       </div>
       <div class="flex items-center">
-        <img src="/assets/coin.png" alt="coin" class="w-6 m-2" />
+        <img src="assets/coin.png" alt="coin" class="w-6 m-2" />
         <h1><span id="balance">5500</span> BDT</h1>
       </div>
     </div>
@@ -42,18 +45,18 @@
       </button>
     </div>
 
-    <div class="father">
+    <div id="donation-section">
       <!-- Card 1 -->
       <div
         class="mother w-full md:w-8/12 gap-6 flex flex-col md:flex-row p-5 mx-auto border border-gray-500 rounded-lg mb-6 justify-center"
       >
         <div class="image w-1/2">
-          <img src="/assets/noakhali.png" class="h-64 md:h-80 w-full" alt="" />
+          <img src="assets/noakhali.png" class="h-64 md:h-80 w-full" alt="" />
         </div>
         <div class="content w-full md:w-1/2 flex flex-col gap-2 justify-center">
           <div class="px-2 w-2/5 flex gap-2 items-center mb-2">
             <h3 class="flex items-center gap-2 bg-gray-200 px-4 rounded-lg">
-              <img src="/assets/coin.png" alt="" class="w-4 h-4" /><span
+              <img src="assets/coin.png" alt="" class="w-4 h-4" /><span
                 id="fund1"
                 >0</span
               >
@@ -91,12 +94,12 @@
         class="mother w-full md:w-8/12 gap-6 flex flex-col md:flex-row p-5 mx-auto border border-gray-500 rounded-lg mb-6 justify-center"
       >
         <div class="image w-1/2">
-          <img src="/assets/feni.png" class="h-64 md:h-80 w-full" alt="" />
+          <img src="assets/feni.png" class="h-64 md:h-80 w-full" alt="" />
         </div>
         <div class="content w-full md:w-1/2 flex flex-col gap-2 justify-center">
           <div class="px-2 w-2/5 flex gap-2 items-center mb-2">
             <h3 class="flex items-center gap-2 bg-gray-200 px-4 rounded-lg">
-              <img src="/assets/coin.png" alt="" class="w-4 h-4" /><span
+              <img src="assets/coin.png" alt="" class="w-4 h-4" /><span
                 id="fund2"
                 >0</span
               >
@@ -135,7 +138,7 @@
       >
         <div class="image w-1/2">
           <img
-            src="/assets/quota-protest.png"
+            src="assets/quota-protest.png"
             class="h-64 md:h-80 w-full"
             alt=""
           />
@@ -143,7 +146,7 @@
         <div class="content w-full md:w-1/2 flex flex-col gap-2 justify-center">
           <div class="px-2 w-2/5 flex gap-2 items-center mb-2">
             <h3 class="flex items-center gap-2 bg-gray-200 px-4 rounded-lg">
-              <img src="/assets/coin.png" alt="" class="w-4 h-4" /><span
+              <img src="assets/coin.png" alt="" class="w-4 h-4" /><span
                 id="fund3"
                 >0</span
               >
@@ -178,7 +181,7 @@
           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box">
               <h3 class="text-3xl font-bold text-center">Congrates!</h3>
-              <img src="/assets/coin.png" alt="coin" class="mx-auto mt-2 mb-4" />
+              <img src="assets/coin.png" alt="coin" class="mx-auto mt-2 mb-4" />
               <p class="py-4 text-center">
                 You Have Donated for Humankind<br /><span
                   class="font-bold text-lg"
@@ -193,6 +196,14 @@
             </div>
           </dialog>
         </div>
+      </div>
+    </div>
+
+    <div id="history-section" class="hidden">
+      <div id="history-container" class="w-8/12 mx-auto">
+        <h1 id="pre" class="text-center text-xl font-bold mt-12">
+          Nothing Donated Yet
+        </h1>
       </div>
     </div>
     <script src="utilities.js"></script>
