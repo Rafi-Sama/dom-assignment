@@ -2,7 +2,7 @@ function donate(btnId, cashId) {
   document.getElementById(btnId).addEventListener("click", function (event) {
     event.preventDefault();
     const donation = parseFloat(document.getElementById(cashId).value);
-    if (isNaN(donation)) {
+    if (isNaN(donation) || donation < 0) {
       alert("Invalid Input!!");
       document.getElementById(cashId).value = "";
       return;
@@ -30,11 +30,11 @@ function donate(btnId, cashId) {
     const h1 = document.createElement("h1");
     h1.classList.add("font-bold", "text-md");
     if (cashId == 1)
-      h1.innerText = `${donation} Taka is Donated for Flood Relief in Feni, Bangladesh`;
+      h1.innerText = `${donation} Taka is Donated for Flood Relief in Noakhali, Bangladesh`;
     if (cashId == 2)
-      h1.innerText = `${donation} Taka is Donated for famine-2024 in Feni, Bangladesh`;
+      h1.innerText = `${donation} Taka is Donated for Flood Relief in Feni, Bangladesh`;
     if (cashId == 3)
-      h1.innerText = `${donation} Taka is Donated for Quota movement in Feni, Bangladesh`;
+      h1.innerText = `${donation} Taka is Donated for Injured in the Quota movement`;
     const date = new Date();
     const p = `Date: ${date}`;
 
